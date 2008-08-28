@@ -1,0 +1,9 @@
+[Desktop Entry]
+DocPath=kpacman/index.html
+Name=Kpacman
+Type=Application
+Exec=kpacman
+Icon=kpacman
+GenericName=Kpacman
+GenericName[de]=Kpacman
+Categories=Qt;KDE;Game;ArcadeGame;

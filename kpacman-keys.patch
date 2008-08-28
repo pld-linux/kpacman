@@ -1,0 +1,21 @@
+--- kpacman-0.3.2/kpacman/kpacman.cpp~	2003-06-18 20:01:27 +0400
++++ kpacman-0.3.2/kpacman/kpacman.cpp	2004-11-12 20:44:23 +0300
+@@ -30,6 +30,8 @@
+ // application specific includes
+ #include "kpacman.h"
+ 
++typedef Keys ZKeys;
++
+ #define ID_STATUS_MSG 1
+ 
+ KpacmanApp::KpacmanApp(QWidget *, const char *name) : KMainWindow(0, name)
+@@ -445,7 +447,7 @@ void KpacmanApp::slotKeyBindings()
+   slotStatusMsg(i18n("Configure key bindings..."));
+   ///////////////////////////////////////////////////////////////////
+   // configure key bindings
+-  Keys *keys = new Keys();
++  ZKeys *keys = new ZKeys();
+   if (keys->exec() == QDialog::Accepted) {
+     view->referee->initKeys();
+     view->score->initKeys();
+
